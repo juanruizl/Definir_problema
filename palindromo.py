@@ -15,4 +15,13 @@ def normalizar(texto):
 
     return limpio
 
+    def es_palindromo(texto):
+        limpio = normalizar(texto)
+
+        invertido = ""
+        for i in range(len(limpio) - 1, -1, -1):
+            invertido += limpio[i]
+
+        return limpio == invertido
+
 

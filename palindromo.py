@@ -25,3 +25,10 @@ def normalizar(texto):
         return limpio == invertido
 
 
+if __name__ == '__main__':
+    texto = input('Introduce una palabra o frase: ')
+
+    if es_palindromo(texto):
+        print(f'"{texto}" es un palíndromo.')
+    else:
+        print(f'"{texto}" no es un palíndromo.')
